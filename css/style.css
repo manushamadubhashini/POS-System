@@ -78,8 +78,11 @@ form input {
   opacity: 0.7;
 }
 .container {
+  /* display: flex;
+  margin-top: 5%; */
   display: flex;
-  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
   color: white;
   text-shadow: 0px 4px 12px black;
 }
@@ -150,8 +153,6 @@ th {
 .card-container {
   display: flex;
   width: 100%;
-}
-.card-container {
   position: absolute !important;
   top: 13% !important;
 }
@@ -184,6 +185,9 @@ th {
   .card-container {
     flex-wrap: nowrap;
   }
+  #purchase-btn {
+    margin-top: 5px !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -196,36 +200,72 @@ th {
   }
 }
 @media (min-width: 320px) and (max-width: 425px) {
-  .card-container {
+  /* .card-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
+  } */
 }
 
-@media (min-width: 720px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 800px) {
   #tables {
     position: relative;
-    margin-top: 70%;
+    margin-top: 100%;
   }
 }
 
 @media (min-width: 800px) and (max-width: 950px) {
   #tables {
     position: relative;
+    margin-top: 70%;
+  }
+}
+@media (min-width: 950px) and (max-width: 1300px) {
+  #tables {
+    position: relative;
     margin-top: 60%;
   }
 }
-@media (min-width: 950px) and (max-width: 1200px) {
-  #tables {
-    position: relative;
-    margin-top: 50%;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 1300px) and (max-width: 1800px) {
   #tables {
     position: relative;
     margin-top: 40%;
+  }
+}
+@media (min-width: 200px) and (max-width: 3000px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media (min-width: 200px) and (max-width: 985px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-container {
+    margin-bottom: 50px;
+  }
+  .table-container {
+    position: relative;
+    right: 25%;
+  }
+}
+@media (min-width: 985px) and (max-width: 1135px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-container {
+    margin-bottom: 50px;
+  }
+  .table-container {
+    position: relative;
+    right: 12%;
   }
 }
 .carousel-caption {
@@ -252,4 +292,21 @@ th {
   background-color: black;
   opacity: 0.7;
   border-radius: 20px;
+}
+footer {
+  /* position: ; */
+  bottom: 0;
+  width: 100%;
+}
+.bg-image {
+  background-image: url("/images/pexels-hobiindustri-4053267.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
