@@ -155,6 +155,9 @@ th {
   position: absolute !important;
   top: 13% !important;
 }
+.card-container h2 {
+  color: green;
+}
 #tables {
   position: relative;
   margin-top: 30%;
